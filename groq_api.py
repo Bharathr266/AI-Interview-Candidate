@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get API key from env
-groq_api_key = os.getenv("GROQ_API_KEY")
+# groq_api_key = os.getenv("GROQ_API_KEY")
+groq_api_key= st.secrets["GROQ_API_KEY"]
 
 # Load Groq LLM (Llama 3.1 model, fast + smart)
 llm = ChatGroq(
