@@ -1,6 +1,5 @@
 streamlit
 PyPDF2
-python-docx
 openai-whisper
 groq
 pydub
@@ -10,4 +9,4 @@ dotenv
 langchain
 langchain_community
 langchain_groq
-
+ffmpeg-python
