@@ -1,0 +1,13 @@
+streamlit
+PyPDF2
+python-docx
+openai-whisper
+groq
+pydub
+SpeechRecognition
+audio-recorder-streamlit
+dotenv
+langchain
+langchain_community
+langchain_groq
+
