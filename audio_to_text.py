@@ -4,6 +4,8 @@ import tempfile
 import dotenv
 dotenv.load_dotenv()
 
+import streamlit as st
+
 def transcribe_audio_groq(audio_bytes):
     # Save audio to temp
     with tempfile.NamedTemporaryFile(delete=False, suffix='.wav') as temp_audio:
@@ -11,7 +13,7 @@ def transcribe_audio_groq(audio_bytes):
         temp_path = temp_audio.name
 
     # Init Groq client
-    client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+    client = Groq(api_key=st.secrets("GROQ_API_KEY"))
     with open(temp_path, "rb") as file:
         transcription = client.audio.transcriptions.create(
             file=file,
