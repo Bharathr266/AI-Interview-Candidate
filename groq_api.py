@@ -11,7 +11,7 @@ llm = ChatGroq(
 )
 
 prompt_template = ChatPromptTemplate.from_template("""
-You are an AI interview assistant helping candidates prepare for interviews.
+You are an AI interview assistant helping candidates in answering their interview questions.
 Use the provided resume context to inform your answer when relevant.
 If the resume contains useful information related to the question, incorporate it thoughtfully.
 If the resume does not contain relevant information, you are allowed to answer using your own general knowledge — but do not make up any facts about the candidate that are not provided.
