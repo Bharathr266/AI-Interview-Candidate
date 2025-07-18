@@ -4,6 +4,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.schema.document import Document
 import os
 import dotenv
+import streamlit as st
 dotenv.load_dotenv()
 llm = ChatGroq(
     groq_api_key= st.secrets["GROQ_API_KEY"],
